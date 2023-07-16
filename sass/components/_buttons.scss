@@ -1,0 +1,32 @@
+.button {
+  padding: 11px 27px 13px;
+  color: #173A56;
+  border-radius: 4px;
+  text-align: center;
+  font-family: 'Open Sans', Verdana, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: ease-in-out 0.3s;
+
+  &_bordered {
+    background-color: $color-light;
+    border: 1px solid $color-hovered;
+
+    &:hover {
+      background-color: $color-hovered;
+    }
+  }
+
+  &_colored {
+    background-color: $color-primary;
+    color: $color-light;
+    border: 1px solid $color-primary;
+
+    &:hover {
+      background-color: $color-additional;
+      border-color: $color-additional;
+    }
+  }
+}
