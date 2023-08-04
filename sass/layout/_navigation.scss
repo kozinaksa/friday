@@ -15,6 +15,7 @@
   &__link {
     text-decoration: none;
     color: $color-text;
+    @extend %transition;
 
     &:hover {
       outline: none;

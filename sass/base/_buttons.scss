@@ -3,12 +3,8 @@
   color: #173A56;
   border-radius: 4px;
   text-align: center;
-  font-family: 'Open Sans', Verdana, sans-serif;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  transition: ease-in-out 0.3s;
+  @extend %transition;
+  @include font(1.6rem, 600, normal);
 
   &_bordered {
     background-color: $color-light;
@@ -29,4 +25,22 @@
       border-color: $color-additional;
     }
   }
+}
+
+.link-button {
+  color: $color-primary;
+  @extend %font-additional;
+  @include font(1.6rem, 600, normal);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+
+  &:hover {
+    color: $color-additional;
+
+    &>.ico_play {
+        background-image: url('./img/icons/play_hover.svg');
+    }
+  }
+
 }

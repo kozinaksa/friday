@@ -1,13 +1,27 @@
+// Abstract
 @import './abstract/constants';
+@import './abstract/mixins';
+@import './abstract/placeholders';
+
+// Base
+@import './base/normalize';
 @import './base/base';
+@import './base/logo';
+@import './base/block-shadowed';
+@import './base/buttons';
+@import './base/icons';
+@import './base/tags';
+
+// Components
+@import './components/about-us';
+@import './components/promo';
+@import './components/tools';
+@import './components/strategies';
+@import './components/contact-us';
 
 // Layout
 @import './layout/wrapper';
 @import './layout/header';
 @import './layout/navigation';
-@import './layout/promo';
+@import './layout/columns';
 
-
-// Components
-@import './components/buttons';
-@import './components/contact-us';
