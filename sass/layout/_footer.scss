@@ -1,0 +1,53 @@
+.footer {
+    padding: 60px 0 70px;
+    @include media-tablet {
+      padding: 47px 0 27px;
+    }
+    @include media-mobile {
+      padding: 35px 0 27px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        vertical-align: top;
+        @include media-tablet {
+          row-gap: 34px;
+        }
+    }
+
+    &__logo {
+      margin: 0 151px 0 0;
+      align-items: top;
+    }
+
+    &-navigation {
+      flex-grow: 1;
+      @include media-mobile {
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+
+    &-navigation__column {
+      align-items: left;
+    }
+
+    &-navigation__title {
+      margin: 0 0 15px;
+    }
+
+    &-navigation__links {
+      padding: 0;
+      @extend %font-additional;
+      @include font(1.6rem, 400, 3.5rem);
+
+      a {
+        color: $color-text;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+}

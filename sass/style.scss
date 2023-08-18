@@ -12,16 +12,17 @@
 @import './base/icons';
 @import './base/tags';
 
+// Layout
+@import './layout/wrapper';
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/columns';
+@import './layout/footer';
+
 // Components
 @import './components/about-us';
 @import './components/promo';
 @import './components/tools';
 @import './components/strategies';
 @import './components/contact-us';
-
-// Layout
-@import './layout/wrapper';
-@import './layout/header';
-@import './layout/navigation';
-@import './layout/columns';
-
+@import './components/hamburger';

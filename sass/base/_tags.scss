@@ -1,7 +1,6 @@
 .tags {
   display: flex;
-
-  >* {
+  >*:not(:last-child) {
     margin: 0 7px 0 0;
   }
 }

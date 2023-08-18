@@ -1,5 +1,8 @@
 html {
   font-size: 10px;
+  * {
+    margin: 0;
+  }
 }
 
 body {
@@ -12,6 +15,10 @@ h1 {
   text-align: center;
   @extend %font-additional;
   @include font(4.4rem, 700, 5.4rem);
+  @include media-mobile {
+    @include font(3.2rem, 700, 4.2rem);
+  }
+  text-align: left;
 }
 
 h2 {
@@ -22,6 +29,9 @@ h2 {
 h3 {
   color: $color-title;
   @include font(2.4rem, 700, 3.4rem);
+  @include media-mobile {
+    @include font(2.1rem, 700, 3.1rem);
+  }
 }
 
 h4 {
@@ -36,11 +46,19 @@ h5 {
 
 p {
   color: $color-text;
-  @extend %font-additional;
   @include font(1.6rem, 400, 2.8rem);
 }
 
-link,
+a,
 button {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
 }

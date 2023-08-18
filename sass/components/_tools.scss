@@ -18,10 +18,36 @@
   &__button {
     margin: 60px 0 0;
     text-align: center;
+    @include media-tablet {
+      margin: 0;
+    }
+  }
+}
+
+.tool-container {
+  @include media-tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+    >* {
+      @include media-tablet {
+        flex-basis: 43%;
+        padding: 0 12px 47px;
+      }
+      @include media-mobile {
+        flex-basis: 90%;
+      }
+    }
+  }
+  @include media-mobile {
+    justify-content: center;
   }
 }
 
 .tool {
+  @include media-tablet {
+    text-align: center;
+  }
+
   &__icon {
     margin: 0 0 30px;
   }

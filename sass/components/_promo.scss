@@ -2,14 +2,27 @@
   padding: 30px 0 111px;
   background-color: $color-light;
 
+  @include media-tablet {
+    overflow: hidden;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media-mobile {
+      flex-direction: column;
+      row-gap: 16px;
+    }
   }
 
   &__content {
-    padding: 0 65px 0 0;
+    * {
+      @include media-mobile {
+        text-align: center;
+      }
+    }
   }
 
   &__title {
@@ -17,12 +30,32 @@
   }
 
   &__text {
-    padding: 0 0 45px;
+    padding: 0 0 65px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    @include font (1.8rem, 400, 2.8rem)
+    @extend %font-additional;
+    @include font (1.8rem, 400, 2.8rem);
+    @include media-mobile {
+      padding: 0 0 23px;
+    }
   }
 
-  &__buttons>:first-child {
-      margin: 0 44px 0 0;
+  &__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+    width: 390px;
+
+    @include media-mobile {
+      flex-direction: column;
+      row-gap: 31px;
+      width: auto;
     }
+  }
+
+  &__image {
+    max-width: 100%;
+    @include media-mobile {
+      order: -1;
+    }
+  }
 }
