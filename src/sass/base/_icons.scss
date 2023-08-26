@@ -4,7 +4,7 @@
 }
 
 .ico_play {
-  background-image: url('./img/icons/play.svg');
+  background-image: url('./src/img/icons/play.svg');
   width: 18px;
   height: 19px;
   cursor: pointer;
@@ -17,22 +17,22 @@
   background-position: center;
 
   &_violet {
-    background-image: url('./img/icons/arrow.svg');
+    background-image: url('./src/img/icons/arrow.svg');
     background-color: $color-violet;
   }
 
   &_yellow {
-    background-image: url('./img/icons/snake.svg');
+    background-image: url('./src/img/icons/snake.svg');
     background-color: $color-yellow;
   }
 
   &_red {
-    background-image: url('./img/icons/heart.svg');
+    background-image: url('./src/img/icons/heart.svg');
     background-color: $color-red;
   }
 
   &_blue {
-    background-image: url('./img/icons/clock.svg');
+    background-image: url('./src/img/icons/clock.svg');
     background-color: $color-blue;
   }
 }
@@ -46,9 +46,9 @@
 }
 
 .ico_phone {
-  background-image: url('./img/icons/phone.svg');
+  background-image: url('./src/img/icons/phone.svg');
 }
 
 .ico_letter {
-  background-image: url('./img/icons/letter.svg');
+  background-image: url('./src/img/icons/letter.svg');
 }
